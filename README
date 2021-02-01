@@ -1,0 +1,13 @@
+There are three types in database
+String, int and bool
+When schema is created, .schema, .meta and .db files are created and initialized.
+Insertion = read the address to which to insert from .meta file and insert tuple their
+    increment the last tuple address(address to insert new tuple) by tuplesize
+    increment database size by tuple size
+    increment number of tuples by 1
+
+Deletion:
+    copy the last tuple to the deleted position
+    decrement the last tuple address by tuplesize
+    decrement database size by tuplesize
+    decrement number of tuples by 1
